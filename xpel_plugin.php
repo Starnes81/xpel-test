@@ -73,3 +73,15 @@ function run_xpel_plugin() {
 
 }
 run_xpel_plugin();
+
+//function to call the form
+function search_bar ($atts) {
+	// lets create the form
+	return '<form id="xpelData" name="xpelForm" action="" method="post">
+			 <input id="xpelSearchValue" type="text" name="xpelInput">
+			 <input type="submit" value="Submit">
+			 </form>
+			 <div id="xpelResults"></div>';
+}
+add_shortcode('xpel_search','search_bar');
+
