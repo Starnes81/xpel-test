@@ -1,5 +1,6 @@
 # xpel-test
 
+Once plug in has been installed:
 
 xpel.php needs to be placed in the root of your site. 
 
