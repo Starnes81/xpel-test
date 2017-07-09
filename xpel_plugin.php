@@ -83,5 +83,10 @@ function search_bar ($atts) {
 			 </form>
 			 <div id="xpelResults"></div>';
 }
-add_shortcode('xpel_search','search_bar');
+add_shortcode('xpel_search','search_bar'); // place shortcode in content area of a page [xpel_search]
 
+// load plug in script
+function xpel_script_files() {
+    wp_enqueue_script( 'xpel_js', plugin_dir_url( __FILE__ ) . 'js/xpel.js', array('jquery'), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'xpel_script_files' );
