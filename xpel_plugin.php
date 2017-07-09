@@ -76,8 +76,8 @@ run_xpel_plugin();
 
 //function to call the form
 function search_bar ($atts) {
-	// lets create the form
-	return '<form id="xpelData" name="xpelForm" action="" method="post">
+	// lets create the form update action to your site http://www.example.com/xpel.php
+	return '<form id="xpelData" name="xpelForm" action="http://xpel.blackonair.com/xpel.php" method="post">
 			 <input id="xpelSearchValue" type="text" name="xpelInput">
 			 <input type="submit" value="Submit">
 			 </form>
